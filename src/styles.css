@@ -26,6 +26,10 @@ h2.f-bold {
     letter-spacing: -2px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .container {
     max-width: 850px;
     margin: auto;
@@ -57,6 +61,7 @@ h2.f-bold {
 
 .btns-container {
     display: flex;
+    gap: 12px;
     margin-top: 20px;
 }
 
@@ -64,13 +69,26 @@ h2.f-bold {
     justify-content: center;
 }
 
-.btns-container .align-end {
+.align-end {
     margin-left: auto;
 }
 
 .blurred-white-bg {
     background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(2px);
+}
+
+.form-field {
+    margin-bottom: 20px;
+}
+
+.alert {
+    font-size: 12px;
+    font-family: inherit;
+}
+
+.alert-danger {
+    color: red;
 }
 
 .text-box,
@@ -82,7 +100,6 @@ h2.f-bold {
     border-radius: 4px;
     background-color: rgba(255, 255, 255, 0.9);
     padding: 8px 10px;
-    margin-bottom: 20px;
     width: 100%;
 }
 
