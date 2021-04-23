@@ -10,6 +10,8 @@ export class BookmarkTileComponent implements OnInit {
 
   @Input() bookmark: Bookmark;
 
+  faviconError: boolean;
+
   constructor() { }
 
   ngOnInit(): void {

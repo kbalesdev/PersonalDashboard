@@ -3,6 +3,7 @@ import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Note } from '../shared/note.model';
 import { NoteService } from '../shared/note.service';
+import { NotificationService } from '../shared/notification.service';
 
 @Component({
   selector: 'app-add-note',
@@ -11,7 +12,7 @@ import { NoteService } from '../shared/note.service';
 })
 export class AddNoteComponent implements OnInit {
 
-  constructor(private noteService: NoteService, private router: Router) { }
+  constructor(private noteService: NoteService, private router: Router, private notificationService: NotificationService) { }
 
   ngOnInit(): void {
   }
@@ -21,6 +22,7 @@ export class AddNoteComponent implements OnInit {
 
     var note = new Note(form.value.title, form.value.content);
     this.noteService.addNote(note);
+    this.notificationService.onShow('Created note!', 2500);
     this.router.navigateByUrl("/notes");
   }
 

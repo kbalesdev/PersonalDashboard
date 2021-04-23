@@ -10,7 +10,9 @@
     flex-wrap: wrap;
 }
 
-.add-btn i {
+.add-btn i,
+.manage-btn i {
     margin-right: 5px;
     margin-left: -3px;
+    opacity: 0.9;
 }
