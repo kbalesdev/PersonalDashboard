@@ -40,4 +40,8 @@ export class TodosComponent implements OnInit {
     this.router.navigateByUrl(`/todos/${todo.id}`);
   }
 
+  trackById(index, item: Todo) {
+    return item.id;
+  }
+
 }
