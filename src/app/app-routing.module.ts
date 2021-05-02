@@ -12,9 +12,9 @@ import { NotesComponent } from './notes/notes.component';
 import { TodosComponent } from './todos/todos.component';
 
 const routes: Routes = [
-  { path: 'bookmarks', component: BookmarksComponent, data: { tabIndex: 0 } },
-  { path: 'todos', component: TodosComponent, data: { tabIndex: 1 } },
-  { path: 'notes', component: NotesComponent, data: { tabIndex: 2 } },
+  { path: 'bookmarks', component: BookmarksComponent, data: { tabIndex: 1 } },
+  { path: 'todos', component: TodosComponent, data: { tabIndex: 2 } },
+  { path: 'notes', component: NotesComponent, data: { tabIndex: 3 } },
   { path: 'notes/add', component: AddNoteComponent },
   { path: 'notes/:id', component: EditNoteComponent },
   { path: 'todos/add', component: AddTodoComponent },

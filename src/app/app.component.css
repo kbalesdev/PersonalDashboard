@@ -2,12 +2,34 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    background-image: url("https://images.unsplash.com/photo-1601885823844-051c9ca3c5a9?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixlib=rb-1.2.1&q=80&w=1920");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
 }
+
+.bg-img {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.change-bg-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+
+    background: rgba(0, 0, 0, 0.2);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+    .change-bg-btn:hover {
+        background: rgba(0, 0, 0, 0.4);
+        color: white;
+    }
+
+    .change-bg-btn:active {
+        transform: translateY(1px);
+    }
 
 .top-section {
     text-align: center;
